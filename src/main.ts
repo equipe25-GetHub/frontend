@@ -1,5 +1,5 @@
 import Vue from 'vue';
-const VueFusionCharts = require('vue-fusioncharts');
+import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Widgets from 'fusioncharts/fusioncharts.widgets';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
