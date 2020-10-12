@@ -16,7 +16,7 @@ const state = reactive<{
 });
 
 const actions = {
-  login: async (credentials) => {
+  login: async (credentials:{email: string, password:string}) => {
     const response = await auth(credentials);
     console.log(response)
     if (response.id) {
