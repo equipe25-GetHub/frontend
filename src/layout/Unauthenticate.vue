@@ -66,9 +66,8 @@ export default defineComponent({
   align-items: center;
   flex: auto;
   .logo {
-    min-width: 195px;
-    min-height: 110px;
-    margin: 5rem 0 1rem 0;
+    width: auto;
+    height: 250px;
   }
   .select-buttons {
     margin: 0.8rem 0 10rem 0;

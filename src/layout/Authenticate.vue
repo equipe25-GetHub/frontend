@@ -31,8 +31,8 @@ export default defineComponent({
   background: var(--color-primary);
 
   img {
-    min-width: 146px;
-    min-height: 82px;
+    width: auto;
+    height: 60px;
   }
 }
 .content {

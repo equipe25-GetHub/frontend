@@ -5,9 +5,7 @@ import { Authentication } from '../store';
 
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
-
-  
+const routes: Array<RouteConfig> = [  
   {
     path: '/',
     name: 'Unauthenticate',
@@ -75,6 +73,7 @@ const router = new VueRouter({
 });
 router.beforeEach((to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
+    console.log('estou aqui')
     if (!Authentication.getters.getStatusLoggedIn.value) {
       next('/login');
     } else {
