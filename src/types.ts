@@ -17,5 +17,5 @@ export interface Colors{
         '--color-hover-register' : string;
 }
 export interface ErrorAxios {
-  response: object;  message: string; stack: string;
+  response: {data:{error:string}};  message: string; stack: string;
 }

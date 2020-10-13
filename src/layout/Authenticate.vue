@@ -5,14 +5,19 @@
     </div>
     <div class="content">
       <router-view></router-view>
+      <Navigation />
     </div>
   </div>
 </template>
 
 <script lang='ts'>
 import { defineComponent } from '@vue/composition-api';
-
-export default defineComponent({});
+import Navigation from '@/components/buttons/Navigation.vue';
+export default defineComponent({
+  components: {
+    Navigation
+  }
+});
 </script>
 
 <style lang='scss'>
