@@ -3,11 +3,12 @@ import * as Types from './../../types';
 //import authHeader from './auth-header';
 
 export const api = axios.create({
-  baseURL: "http://localhost:3333/"
+  baseURL: process.env.VUE_APP_API_URL
 });
 
 const onError = ({ response, stack, message }: Types.ErrorAxios) => {
   console.log(response, stack, message);
+  alert(response.data.error)
 
 };
 

@@ -8,7 +8,6 @@
       <InputDefault title="Favorecido" type="text" icon="bank-transfer-out" />
     </div>
     <div class="description-box">
-      <strong>Descrição do compra</strong>
       <textarea
         name="description"
         id="description"
@@ -19,7 +18,7 @@
     </div>
     <div class="buttons-hiring">
       <ButtonDefault name="Voltar" @clicked="$router.push('/loan/simulator')" />
-      <ButtonDefault name="Contratar" />
+      <ButtonDefault name="Confirmar" />
     </div>
   </div>
 </template>
@@ -78,6 +77,7 @@ export default defineComponent({
       outline-color: var(--color-primary);
       width: 100%;
       margin-top: 5px;
+      height: 100px;
     }
   }
   .buttons-hiring {
